@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+aside 
+{
+    width: 250px;
+	float: left;
+	background-color: mediumpurple;
+	height: auto;
+    margin-bottom: 10px;
+	font-weight: bold;
+	
+	
+}
+p {
+	text-align-last: center;
+	color: darkred;
+	
+}
+
+.navi{
+	color: black;
+	
+}
+img
+{float:right;
+}
+
+
+header 
+{
+	height: 80px;
+	font-weight: bold;
+	font-size: 50px;
+	color: #000000;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-top: 1px;
+	padding-bottom: 10px;
+	background-color: mediumpurple;
+}
+navi{
+	float:right;
+	
+	
+	}
+
+.myPortfolio{
+	font-weight: bold;
+	border-color: aqua;
+	
+}
+.contactMe{
+	font-weight: bold;
+	border-color: yellow;
+	
+}
+.navi {color: white;
+}
+
+
+.myIntro{
+	font-weight: bold;
+	border-color: deeppink;
+}
+section {
+	text-align:left;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 50px;
+	
+	
+	
+}
+body {
+  font-family: 'liquid_crystalregular', sans-serif;
+  user-select: none;
+  user-drag: none;
+}
+.clock {
+  height: 100px;
+  width: 70%;
+  line-height: 100px;  
+  margin: 150px auto 0;
+  padding: 0 50px;
+  background: #222;
+  color: #eee;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 7px #222;
+  text-shadow: 0 0 3px #fff;
+}
+.footer{
+	color: black;
+	font-weight: bold;
+	
+	
+}
+
