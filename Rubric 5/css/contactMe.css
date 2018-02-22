@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container 
+{
+	margin: 0 auto;
+	width: 960px;
+	height:700px;
+    border-radius: 25px;
+    border: 5px dashed purple;
+    padding: 20px; 
+}
+
+
+
+
+header 
+{	text-align: center;
+	height: 80px;
+	color: #000000;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-top: 1px;
+	padding-bottom: 10px;
+	background-color: cadetblue;
+}
+
+aside 
+{
+    width: 150px;
+	float: left;
+	background-color: cadetblue;
+	min-height: 300px;
+ margin-bottom: 10px;
+}
+
+content {
+	width: 770px;
+	float: left;
+
+	padding-left: 40px;
+	padding-bottom: 20px;
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+	
+}
+
+
+.myName {
+	font-weight: bold;
+
+}
+
+
+footer {
+	width:auto;
+	height:50px;
+	padding-top: 5px;
+	clear: both;
+	text-align: center;
+	
+	
+}
+
+function myFunction() {
+    document.getElementsByTagName("header")[0].style.backgroundColor = "purple";
+}
