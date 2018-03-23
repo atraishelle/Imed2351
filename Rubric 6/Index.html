@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rubric 6</title>
+</head>
+
+<body><center>
+
+<img src="Images/Eyes.png" alt="Eyes" width="500" height="300" id="blurme">
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Oo Oo Click me too!</p>
+	
+
+
+
+<br/><br/>
+	Pick a Color
+	<br>
+<label>
+      <input type="radio" name="favColors" value="love" id="favColors_0">
+      Pink</label><br/>
+      
+      <label>
+      <input type="radio" name="favColors" value="wealth" id="favColors_1">
+      Green</label><br/>
+      
+      <label>
+          <input type="radio" name="favColors" value="health" id="favColors_2">
+          Light Blue </label><br/>
+<input value="Smash That Button!" type="submit" />
+</form>
+	<br>
+	<br>
+	
+<button>Show Your Fortune</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:pink;"> LOVE </div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"> WEALTH</div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:lightblue;">HEALTH</div>
+
+ 
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<blockquote>&nbsp;</blockquote>
+<script>
+	$('#blurme').mouseenter(function(){
+	$(this).fadeTo("slow", .2);
+		});
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+	
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+    });
+});
+</script>
+</center></body>
+</html>
