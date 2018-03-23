@@ -3,12 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>Rubric 6</title>
+<style type="text/css">
+.button2 {
+}
+</style>
 </head>
 
 <body><center>
+	<div id="flip">Click Here First</div>
+<div id="panel">Want to see your fortune? Click below in the order each line appears and reveal what fortune you will have for the rest of your life..Good Luck</div>
 
 <img src="Images/Eyes.png" alt="Eyes" width="500" height="300" id="blurme">
-
 <p>If you click on me, I will disappear.</p>
 <p>Click me away!</p>
 <p>Oo Oo Click me too!</p>
@@ -20,7 +25,7 @@
 	Pick a Color
 	<br>
 <label>
-      <input type="radio" name="favColors" value="love" id="favColors_0">
+    <input type="radio" name="favColors" value="love" id="favColors_0">
       Pink</label><br/>
       
       <label>
@@ -28,23 +33,38 @@
       Green</label><br/>
       
       <label>
-          <input type="radio" name="favColors" value="health" id="favColors_2">
+        <input type="radio" name="favColors" value="health" id="favColors_2">
           Light Blue </label><br/>
-<input value="Smash That Button!" type="submit" />
 </form>
 	<br>
 	<br>
 	
-<button>Show Your Fortune</button><br><br>
+<button class="button2">Show Your Fortune</button><br><br>
 
 <div id="div1" style="width:80px;height:80px;display:none;background-color:pink;"> LOVE </div><br>
 <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"> WEALTH</div><br>
 <div id="div3" style="width:80px;height:80px;display:none;background-color:lightblue;">HEALTH</div>
+<br>
+	
+<div id="div4" style="height:150px;width:300px;border:1px solid black;background-color:gray;">
 
+These are you results.
+<p>Remember, each color represents a different fortune.</p>
+<p>Don't believe everything you see online!</p>
+
+</div>
+<br>
+
+<button id="button1">Empty The Gray Box</button>
  
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <blockquote>&nbsp;</blockquote>
 <script>
+	$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
 	$('#blurme').mouseenter(function(){
 	$(this).fadeTo("slow", .2);
 		});
@@ -55,12 +75,30 @@ $(document).ready(function(){
 });
 	
 $(document).ready(function(){
-    $("button").click(function(){
+    $(".button2").click(function(){
         $("#div1").fadeIn();
         $("#div2").fadeIn("slow");
         $("#div3").fadeIn(3000);
     });
 });
+	$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#div4").empty();
+    });
+});
 </script>
+	<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: lightblue;
+    border: solid 2px maroon;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
 </center></body>
 </html>
